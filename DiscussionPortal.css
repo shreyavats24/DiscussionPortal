@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: left;
+    /* line-height: 20px; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: row; */
+     
+}
+#Heading{
+    background-color: rgb(4, 187, 144);
+    width: 100%;
+    height:60px;
+    color: white;
+    /* text-align: center; */
+    font-size: 50px;
+    font-weight: bold;
+}
+.leftPane{
+    /* background-color: bisque; */
+    width:50%;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    position: absolute;
+    /* float:left; */
+}
+.SearchBox{
+    padding-left: 10px;
+}
+.SearchBox>input{
+    margin: 10px;
+    padding: 10px;
+}
+#QuesList{
+background-color: gainsboro;
+padding: 10px;
+line-height: 5px;
+overflow-y: auto;
+max-height:500px;
+}
+#QuesList>div{
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.timestamp{
+    background-color: aqua;
+    color: black;
+}
+.rightPane{ 
+    /* background-color: aqua; */
+    /* float: right;  */
+    display: flex;
+    width: 40%;
+    flex-direction:column;
+    position: absolute;
+    right:10px;
+    left: 720px;
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+.createNewQues{
+    margin-top: 120px;
+}
+.createNewQues>*,.ansList>*{
+    margin-left: 40px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;     
+}
+.createNewQues>p,.createNewQues>input,.ansList>input{
+    line-height: 5px;
+    text-align: left;
+}
+.ansList{
+    top: 190px;
+    left: 1px;
+    position: absolute;
+}
+.ansList>p,.ansList>h2{
+    line-height:2px;
+}
+#fetchedQues{
+    line-height: 0;
+}
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+#saveResponse{
+    /* background-color: gainsboro; */
+    padding:0;
+    line-height:0;
+    max-height: 130px;
+    max-width: 510px;
+    overflow-y: scroll;
+}
+#ResolveButn{
+    left: 440px;
+    top: 90px;
+    /* height: 28px; */
+    /* text-align:top; */
+    position: absolute;
+}
+#respDiv{
+    position: relative;
+    height: fit-content;
+}
+.circle{
+    position: absolute; 
+    top:8px;
+    left:400px;
+    /* margin-left: 200px; */
+    border-radius:50% ;
+}
+.redcircle{
+    position: absolute;
+    top: 8px;
+    left: 450px;
+    border-radius: 50%;
+}
+#likeNo{
+    position: absolute;
+    top: 50px;
+    left: 412px;
+    color: black;
+}
+#dislikeNo{
+    position: absolute;
+    top: 50px;
+    left: 460px;
+    color: black;
+}
+#submitResponse{
+    margin-top: 5px;
+    margin-left:480px;
+    height: 30px;
+}
+.star{
+    position: absolute;
+    width: 40px;
+    top:20px;
+    left: 600px;
+}
+.responseDiv{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 2px;
+    background-color: gainsboro;
+}
+.createNewQues>button,.SearchBox>button,.ansList>button,.quesInfo>button{
+    background-color: rgb(2, 194, 228);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-style: none;
+}
+.createNewQues>button:hover,.SearchBox>button:hover{
+    background-color:  rgb(5, 143, 168);
+    cursor: pointer;
+}
+.quesInfo{
+    background-color: gainsboro;
+    position: absolute;
+    top: 56px;
+    left:45px;
+    width: 514px;
+}
+.quesInfo>h2{
+    margin-top: 0;
+}
+
+

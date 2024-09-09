@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DiscussionPortal.css">
+    <title>Discussion Portal</title>
+</head>
+<body>
+    <div class="container">
+        <div id="Heading">Discussion Portal</div>
+        <div class="leftPane">
+            <div class="SearchBox">
+                <button id="revert">New Question Form</button>
+                <input type="search" name="search" id="search" placeholder="Search Questions">
+                <!-- <button>Search</button> -->
+            </div>
+            <div id="QuesList">
+                
+            </div>
+        </div>
+            <div class="rightPane">
+                <div class="createNewQues" id="createNewQues">
+                    <h1>Welcome to Discussion Portal!!</h1>
+                    <p>Enter a Subject and question to get started</p>
+                    <input type="text" id="title" placeholder="Write Subject here">
+                    <textarea id="textArea" cols="55" rows="10" placeholder="Write your question here" maxlength="80"></textarea>
+                    <button id="submit">Submit</button>
+                </div>
+                <div class="quesDetails hidden" id="quesDetails"><!-- hidden -->
+                    <div class="quesInfo">
+                        <h2>Question</h2>
+                        <div id="fetchedQues"></div>
+                        <button id="ResolveButn">Resolve</button>
+                    </div>
+                    
+                    <div class="ansList">
+                        <h2>Response</h2>
+                        <div id="saveResponse"></div>
+                        <p>Add Response</p>
+                        <input type="text" id="Response" placeholder="Write your name here">
+                        <textarea id="comment" cols="65" rows="10" placeholder="Write your comment here"></textarea>
+                        <button id="submitResponse">Submit</button>
+                    </div>
+                </div>
+            </div>       
+    </div>
+    <script src="DiscussionPortal.js"></script>
+</body>
+</html>
