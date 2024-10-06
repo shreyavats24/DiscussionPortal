@@ -82,7 +82,7 @@ function displayQuesOnUI(question)
     const title=document.createElement("h3");
     const description = document.createElement("p");
     const createdAt = document.createElement("p");
-    createdAt.classList.add(".timestamp");
+    createdAt.classList.add("timestamp");
     // updateTime();
     //createdAt.innerHTML=new Date(question.createdAt).toLocaleDateString("en"); 
     createdAt.innerText=timeAgo(((Date.now()-question.createdAt)/1000)); //yha humne current tym nikal liye fir vo seconds bhj diye
